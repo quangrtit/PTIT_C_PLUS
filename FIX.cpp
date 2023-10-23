@@ -19,7 +19,10 @@ using namespace std;
 
 void task1()
 {
-    cout << "hello world" << endl;
+    for(int i = 1; i <= 100; i++)
+    {
+        cout << "hello world" << endl;
+    }
 }
 int main()
 {
