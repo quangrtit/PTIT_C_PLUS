@@ -1,0 +1,1 @@
+{"name":"Local: CPP0204-Dem_so_nguyen_to","url":"d:\\PTIT_C++\\CPP0204-Dem_so_nguyen_to.cpp","tests":[{"id":1693620047305,"input":"2\n1 10\n5 10","output":"4\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0204-Dem_so_nguyen_to.cpp","group":"local","local":true}

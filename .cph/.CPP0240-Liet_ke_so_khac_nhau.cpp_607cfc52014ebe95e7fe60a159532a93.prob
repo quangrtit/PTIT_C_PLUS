@@ -1,0 +1,1 @@
+{"name":"Local: CPP0240-Liet_ke_so_khac_nhau","url":"d:\\PTIT_C++\\CPP0240-Liet_ke_so_khac_nhau.cpp","tests":[{"id":1693412765554,"input":"10\n3 7 9 3 6 13 7 7 9 3","output":"3 6 7 9 13"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0240-Liet_ke_so_khac_nhau.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: CPP0414-Sap_xep_chu_so","url":"d:\\PTIT_C++\\CPP0414-Sap_xep_chu_so.cpp","tests":[{"id":1693477923593,"input":"2\n3\n131 11 48\n4\n111 222 333 446","output":"1 3 4 8\n1 2 3 4 6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0414-Sap_xep_chu_so.cpp","group":"local","local":true}

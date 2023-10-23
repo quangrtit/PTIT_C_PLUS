@@ -1,0 +1,1 @@
+{"name":"Local: CPP0445-So_nho_thu_nhat_va_nho_thu_hai","url":"d:\\PTIT_C++\\CPP0445-So_nho_thu_nhat_va_nho_thu_hai.cpp","tests":[{"id":1693492779708,"input":"2\n10\n5 6 7 8 9 10 1 2 3 4\n5\n1 1 1 1 1","output":"1 2\n-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0445-So_nho_thu_nhat_va_nho_thu_hai.cpp","group":"local","local":true}

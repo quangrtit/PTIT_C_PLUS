@@ -1,0 +1,1 @@
+{"name":"Local: CPP0274-Dem_so_phan_tu_bi_lap_lai","url":"d:\\PTIT_C++\\CPP0274-Dem_so_phan_tu_bi_lap_lai.cpp","tests":[{"id":1693413864409,"input":"2\n5\n4 5 1 2 1\n6\n10 20 30 30 20 5","output":"2 \n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0274-Dem_so_phan_tu_bi_lap_lai.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: CPP0334-Tinh_tong_cac_so_trong_xau","url":"d:\\PTIT_C++\\CPP0334-Tinh_tong_cac_so_trong_xau.cpp","tests":[{"id":1693928682374,"input":"4\n1abc23\ngeeks4geeks\n1abc2x30yz67\n123abc","output":"24\n4\n100\n123"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0334-Tinh_tong_cac_so_trong_xau.cpp","group":"local","local":true}

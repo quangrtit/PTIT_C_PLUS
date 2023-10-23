@@ -1,0 +1,1 @@
+{"name":"Local: CPP0322-Tong_hai_so_nguyen_lon","url":"d:\\PTIT_C++\\CPP0322-Tong_hai_so_nguyen_lon.cpp","tests":[{"id":1693926594010,"input":"1\n12\n198111","output":"198123"},{"id":1693926646435,"input":"1\n99\n98","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0322-Tong_hai_so_nguyen_lon.cpp","group":"local","local":true}

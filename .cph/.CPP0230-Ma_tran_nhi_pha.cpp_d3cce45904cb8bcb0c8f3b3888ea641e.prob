@@ -1,0 +1,1 @@
+{"name":"Local: CPP0230-Ma_tran_nhi_pha","url":"d:\\PTIT_C++\\CPP0230-Ma_tran_nhi_pha.cpp","tests":[{"id":1693412634909,"input":"3\n1 1 0\n1 1 1\n1 0 0","output":"2"},{"id":1693412648416,"input":"2\n1 0 0\n0 1 1","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0230-Ma_tran_nhi_pha.cpp","group":"local","local":true}

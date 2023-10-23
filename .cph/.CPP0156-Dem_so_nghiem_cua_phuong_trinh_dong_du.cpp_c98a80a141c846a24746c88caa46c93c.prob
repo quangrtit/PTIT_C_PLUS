@@ -1,0 +1,1 @@
+{"name":"Local: CPP0156-Dem_so_nghiem_cua_phuong_trinh_dong_du","url":"d:\\PTIT_C++\\CPP0156-Dem_so_nghiem_cua_phuong_trinh_dong_du.cpp","tests":[{"id":1694059520030,"input":"2\n5 7\n8 6","output":"1\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0156-Dem_so_nghiem_cua_phuong_trinh_dong_du.cpp","group":"local","local":true}

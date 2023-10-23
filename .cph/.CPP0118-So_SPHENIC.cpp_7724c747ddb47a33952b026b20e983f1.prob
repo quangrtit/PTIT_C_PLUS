@@ -1,0 +1,1 @@
+{"name":"Local: CPP0118-So_SPHENIC","url":"d:\\PTIT_C++\\CPP0118-So_SPHENIC.cpp","tests":[{"id":1693566434428,"input":"2\n30\n60","output":"1\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0118-So_SPHENIC.cpp","group":"local","local":true}

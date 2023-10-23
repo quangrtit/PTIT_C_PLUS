@@ -1,0 +1,1 @@
+{"name":"Local: CPP0335-Tim_so_lon_nhat_trong_xau","url":"d:\\PTIT_C++\\CPP0335-Tim_so_lon_nhat_trong_xau.cpp","tests":[{"id":1693928899471,"input":"3\n100klh564abc365bg\nabvhd9sdnkjdfs\nabchsd0sdhs","output":"564\n9\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0335-Tim_so_lon_nhat_trong_xau.cpp","group":"local","local":true}

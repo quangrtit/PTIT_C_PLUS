@@ -1,0 +1,1 @@
+{"name":"Local: CPP0127-Cap_so_nguyen_to_dau_tien_co_tong_bang_n","url":"d:\\PTIT_C++\\CPP0127-Cap_so_nguyen_to_dau_tien_co_tong_bang_n.cpp","tests":[{"id":1693280379157,"input":"2\n4\n8","output":"2 2\n3 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0127-Cap_so_nguyen_to_dau_tien_co_tong_bang_n.cpp","group":"local","local":true}

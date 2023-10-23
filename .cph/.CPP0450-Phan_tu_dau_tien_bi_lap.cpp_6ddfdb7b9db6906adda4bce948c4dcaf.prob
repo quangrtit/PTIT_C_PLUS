@@ -1,0 +1,1 @@
+{"name":"Local: CPP0450-Phan_tu_dau_tien_bi_lap","url":"d:\\PTIT_C++\\CPP0450-Phan_tu_dau_tien_bi_lap.cpp","tests":[{"id":1693495773081,"input":"2\n5\n4 5 1 2 1\n6\n10 20 30 30 20 5 7","output":"1\n30"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0450-Phan_tu_dau_tien_bi_lap.cpp","group":"local","local":true}

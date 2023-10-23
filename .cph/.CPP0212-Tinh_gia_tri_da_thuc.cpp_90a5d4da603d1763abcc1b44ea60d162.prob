@@ -1,0 +1,1 @@
+{"name":"Local: CPP0212-Tinh_gia_tri_da_thuc","url":"d:\\PTIT_C++\\CPP0212-Tinh_gia_tri_da_thuc.cpp","tests":[{"id":1693620747324,"input":"1\n4  2\n1  2  0  4","output":"20"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0212-Tinh_gia_tri_da_thuc.cpp","group":"local","local":true}

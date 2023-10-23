@@ -1,0 +1,1 @@
+{"name":"Local: CPP0152-Chia_du","url":"d:\\PTIT_C++\\CPP0152-Chia_du.cpp","tests":[{"id":1693291373340,"input":"2\n3 11\n10 17","output":"4\n12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0152-Chia_du.cpp","group":"local","local":true}

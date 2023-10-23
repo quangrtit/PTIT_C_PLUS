@@ -1,0 +1,1 @@
+{"name":"Local: CPP0342-Tach_chu_so","url":"d:\\PTIT_C++\\CPP0342-Tach_chu_so.cpp","tests":[{"id":1693929528284,"input":"2\nAC2BEW3\nACCBA10D2EW30","output":"ABCEW5\nAABCCDEW6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0342-Tach_chu_so.cpp","group":"local","local":true}

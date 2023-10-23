@@ -1,0 +1,1 @@
+{"name":"Local: CPP0139-So_SMITH","url":"d:\\PTIT_C++\\CPP0139-So_SMITH.cpp","tests":[{"id":1694187261158,"input":"2\n4\n666","output":""},{"id":1694187443293,"input":"1\n4","output":""},{"id":1694187944410,"input":"1\n666","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0139-So_SMITH.cpp","group":"local","local":true}

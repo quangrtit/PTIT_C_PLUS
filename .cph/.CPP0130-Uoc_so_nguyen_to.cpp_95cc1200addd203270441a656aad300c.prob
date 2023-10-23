@@ -1,0 +1,1 @@
+{"name":"Local: CPP0130-Uoc_so_nguyen_to","url":"d:\\PTIT_C++\\CPP0130-Uoc_so_nguyen_to.cpp","tests":[{"id":1693280777198,"input":"2\n315\n31","output":"3 3 5 7\n31"},{"id":1693280946300,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0130-Uoc_so_nguyen_to.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: CPP0436-So_nho_nhat_lon_hon_ai","url":"d:\\PTIT_C++\\CPP0436-So_nho_nhat_lon_hon_ai.cpp","tests":[{"id":1694682973345,"input":"2\n9\n6 3 9 8 10 2 1 15 7\n4\n13 6 7 12","output":"7 6 10 9 15 3 2 _ 8\n_ 7 12 13"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0436-So_nho_nhat_lon_hon_ai.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: CPP0333-Chuan_hoa_ho_ten","url":"d:\\PTIT_C++\\CPP0333-Chuan_hoa_ho_ten.cpp","tests":[{"id":1693457585156,"input":"ngUyeN   vAN Nam","output":"Nguyen Van, NAM"},{"id":1693473603619,"input":"  KHONG   VAN  ","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0333-Chuan_hoa_ho_ten.cpp","group":"local","local":true}

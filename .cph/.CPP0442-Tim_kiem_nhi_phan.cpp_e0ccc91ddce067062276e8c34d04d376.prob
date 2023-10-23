@@ -1,0 +1,1 @@
+{"name":"Local: CPP0442-Tim_kiem_nhi_phan","url":"d:\\PTIT_C++\\CPP0442-Tim_kiem_nhi_phan.cpp","tests":[{"id":1693491704982,"input":"2 \n5  16\n9  7  2  16  4\n7  98\n1  22  57  47  34  18  66","output":"1\n-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0442-Tim_kiem_nhi_phan.cpp","group":"local","local":true}

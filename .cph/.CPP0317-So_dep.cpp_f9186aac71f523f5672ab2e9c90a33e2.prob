@@ -1,0 +1,1 @@
+{"name":"Local: CPP0317-So_dep","url":"d:\\PTIT_C++\\CPP0317-So_dep.cpp","tests":[{"id":1693448872406,"input":"4\n123456787654321\n86442824468\n8006000444422220000222244440006008\n235365789787654324567856578654356786556","output":"NO\nYES\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0317-So_dep.cpp","group":"local","local":true}

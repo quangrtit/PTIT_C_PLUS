@@ -1,0 +1,1 @@
+{"name":"Local: CPP0108-So_tang_giam","url":"d:\\PTIT_C++\\CPP0108-So_tang_giam.cpp","tests":[{"id":1693564998624,"input":"2\n2\n4","output":"20\n50"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0108-So_tang_giam.cpp","group":"local","local":true}

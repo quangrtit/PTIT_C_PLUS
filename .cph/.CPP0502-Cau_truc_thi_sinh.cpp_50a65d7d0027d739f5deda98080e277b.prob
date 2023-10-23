@@ -1,0 +1,1 @@
+{"name":"Local: CPP0502-Cau_truc_thi_sinh","url":"d:\\PTIT_C++\\CPP0502-Cau_truc_thi_sinh.cpp","tests":[{"id":1694337239121,"input":"Nguyen Hoang Ha\n11/10/2001\n4.5\n10.0\n5.5","output":"Nguyen Hoang Ha 11/10/2001 20.0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0502-Cau_truc_thi_sinh.cpp","group":"local","local":true}

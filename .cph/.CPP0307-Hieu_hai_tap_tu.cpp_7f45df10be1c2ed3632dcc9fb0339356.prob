@@ -1,0 +1,1 @@
+{"name":"Local: CPP0307-Hieu_hai_tap_tu","url":"d:\\PTIT_C++\\CPP0307-Hieu_hai_tap_tu.cpp","tests":[{"id":1693755087104,"input":"2\nabc ab ab ab abcd\nab abc\naaa xyz ab zzz abc dd dd abc\nxyz dd ttt sas cdc","output":"abcd\naaa ab abc zzz"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0307-Hieu_hai_tap_tu.cpp","group":"local","local":true}

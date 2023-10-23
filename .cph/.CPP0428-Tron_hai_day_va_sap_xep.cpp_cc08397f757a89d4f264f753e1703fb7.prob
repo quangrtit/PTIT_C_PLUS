@@ -1,0 +1,1 @@
+{"name":"Local: CPP0428-Tron_hai_day_va_sap_xep","url":"d:\\PTIT_C++\\CPP0428-Tron_hai_day_va_sap_xep.cpp","tests":[{"id":1693480887008,"input":"1\n3 3\n10 5 15\n20 3 2","output":"2 3 5 10 15 20"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0428-Tron_hai_day_va_sap_xep.cpp","group":"local","local":true}

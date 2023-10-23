@@ -1,0 +1,1 @@
+{"name":"Local: CPP0259-Tich_ma_tran","url":"d:\\PTIT_C++\\CPP0259-Tich_ma_tran.cpp","tests":[{"id":1693413190353,"input":"3 4 3\n1 2 3 4\n4 2 3 1\n2 4 1 3\n1 1 1\n2 2 2\n3 3 3\n4 4 4","output":"30 30 30\n21 21 21\n25 25 25"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0259-Tich_ma_tran.cpp","group":"local","local":true}

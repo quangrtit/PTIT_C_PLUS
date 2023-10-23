@@ -1,0 +1,1 @@
+{"name":"Local: CPP0737-Day_con_trung_binh_lon_nhat","url":"d:\\PTIT_C++\\CPP0737-Day_con_trung_binh_lon_nhat.cpp","tests":[{"id":1694181776465,"input":"2\n5 2\n10 4 5 15 20\n4 2\n-12 34 56 7","output":"15 20\n34 56"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0737-Day_con_trung_binh_lon_nhat.cpp","group":"local","local":true}

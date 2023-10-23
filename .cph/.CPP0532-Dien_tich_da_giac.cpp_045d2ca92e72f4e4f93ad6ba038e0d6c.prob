@@ -1,0 +1,1 @@
+{"name":"Local: CPP0532-Dien_tich_da_giac","url":"d:\\PTIT_C++\\CPP0532-Dien_tich_da_giac.cpp","tests":[{"id":1694614995064,"input":"2\n3\n0 0\n1 0\n0 1\n4\n0 0\n2 0\n2 2\n0 2","output":"0.500\n4.000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0532-Dien_tich_da_giac.cpp","group":"local","local":true}

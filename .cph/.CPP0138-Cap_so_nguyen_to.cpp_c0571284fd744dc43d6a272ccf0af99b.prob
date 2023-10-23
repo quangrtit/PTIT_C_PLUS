@@ -1,0 +1,1 @@
+{"name":"Local: CPP0138-Cap_so_nguyen_to","url":"d:\\PTIT_C++\\CPP0138-Cap_so_nguyen_to.cpp","tests":[{"id":1693290821736,"input":"2\n74\n1024","output":"3 71\n3 1021"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0138-Cap_so_nguyen_to.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: CPP0449-Khoang_cach_bang_x","url":"d:\\PTIT_C++\\CPP0449-Khoang_cach_bang_x.cpp","tests":[{"id":1694162917159,"input":"2\n6 78\n5 20 3 2 5 80\n5 45\n90 70 20 80 50","output":"1\n-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0449-Khoang_cach_bang_x.cpp","group":"local","local":true}

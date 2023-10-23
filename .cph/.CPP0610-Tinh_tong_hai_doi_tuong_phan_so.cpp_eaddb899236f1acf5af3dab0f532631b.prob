@@ -1,0 +1,1 @@
+{"name":"Local: CPP0610-Tinh_tong_hai_doi_tuong_phan_so","url":"d:\\PTIT_C++\\CPP0610-Tinh_tong_hai_doi_tuong_phan_so.cpp","tests":[{"id":1694358891260,"input":"123 456 12 34","output":"1609/2584"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0610-Tinh_tong_hai_doi_tuong_phan_so.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: CPP0351-Chuan_hoa_ho_ten","url":"d:\\PTIT_C++\\CPP0351-Chuan_hoa_ho_ten.cpp","tests":[{"id":1694336727850,"input":"2\n1\nNguyeN    vAn    Nam\n2\nhoAng  le Nhat THONG chi","output":"Nam Nguyen Van\nLe Nhat Thong Chi Hoang"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0351-Chuan_hoa_ho_ten.cpp","group":"local","local":true}

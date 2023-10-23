@@ -1,0 +1,1 @@
+{"name":"Local: CPP0134-Uoc_nguyen_to_thu_k","url":"d:\\PTIT_C++\\CPP0134-Uoc_nguyen_to_thu_k.cpp","tests":[{"id":1693290054008,"input":"2\n225 2\n81 5","output":"3\n-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0134-Uoc_nguyen_to_thu_k.cpp","group":"local","local":true}

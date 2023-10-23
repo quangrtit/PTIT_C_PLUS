@@ -1,0 +1,1 @@
+{"name":"Local: CPP0314-Chuc_mung_nam_moi","url":"d:\\PTIT_C++\\CPP0314-Chuc_mung_nam_moi.cpp","tests":[{"id":1693448071173,"input":"4\nCHUC MUNG NAM MOI\nHAPPY NEW YEAR\nCHUC MUNG TUOI MOI\nCHUC MUNG NAM MOI","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0314-Chuc_mung_nam_moi.cpp","group":"local","local":true}

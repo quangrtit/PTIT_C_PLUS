@@ -1,0 +1,1 @@
+{"name":"Local: CPP0222-Dem_phan_tu_giong_nhau","url":"d:\\PTIT_C++\\CPP0222-Dem_phan_tu_giong_nhau.cpp","tests":[{"id":1693648362207,"input":"1\n4\n2 1 4 3 1 2 3 2 3 6 2 3 5 2 5 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0222-Dem_phan_tu_giong_nhau.cpp","group":"local","local":true}

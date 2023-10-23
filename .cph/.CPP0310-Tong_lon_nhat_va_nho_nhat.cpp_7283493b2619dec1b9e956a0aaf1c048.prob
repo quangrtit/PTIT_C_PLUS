@@ -1,0 +1,1 @@
+{"name":"Local: CPP0310-Tong_lon_nhat_va_nho_nhat","url":"d:\\PTIT_C++\\CPP0310-Tong_lon_nhat_va_nho_nhat.cpp","tests":[{"id":1693755665146,"input":"2\n645  666\n5466 4555","output":"1100 1312\n10010 11132"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0310-Tong_lon_nhat_va_nho_nhat.cpp","group":"local","local":true}

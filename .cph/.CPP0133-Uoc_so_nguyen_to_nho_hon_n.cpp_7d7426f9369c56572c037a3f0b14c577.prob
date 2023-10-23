@@ -1,0 +1,1 @@
+{"name":"Local: CPP0133-Uoc_so_nguyen_to_nho_hon_n","url":"d:\\PTIT_C++\\CPP0133-Uoc_so_nguyen_to_nho_hon_n.cpp","tests":[{"id":1693281432902,"input":"2\n10\n35","output":"2  3  5  7\n2  3  5  7  11  13  17  19  23  29  31"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0133-Uoc_so_nguyen_to_nho_hon_n.cpp","group":"local","local":true}

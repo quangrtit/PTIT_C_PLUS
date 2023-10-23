@@ -1,0 +1,1 @@
+{"name":"Local: CPP0312-Xau_pangram","url":"d:\\PTIT_C++\\CPP0312-Xau_pangram.cpp","tests":[{"id":1693414648991,"input":"2\nqwqqwqeqqwdsdadsdasadsfsdsdsdasasas\n4\nqwqqwqeqqwdsdadsdasadsfsdsdsdasasas\n24","output":"0\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0312-Xau_pangram.cpp","group":"local","local":true}

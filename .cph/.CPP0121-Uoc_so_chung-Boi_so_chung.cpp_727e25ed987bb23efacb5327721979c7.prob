@@ -1,0 +1,1 @@
+{"name":"Local: CPP0121-Uoc_so_chung-Boi_so_chung","url":"d:\\PTIT_C++\\CPP0121-Uoc_so_chung-Boi_so_chung.cpp","tests":[{"id":1693279150789,"input":"2\n5 10\n14 8","output":"10 5\n56 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0121-Uoc_so_chung-Boi_so_chung.cpp","group":"local","local":true}

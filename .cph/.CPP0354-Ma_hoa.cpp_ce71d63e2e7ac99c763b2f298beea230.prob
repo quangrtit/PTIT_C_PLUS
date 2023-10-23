@@ -1,0 +1,1 @@
+{"name":"Local: CPP0354-Ma_hoa","url":"d:\\PTIT_C++\\CPP0354-Ma_hoa.cpp","tests":[{"id":1693475121851,"input":"2\nAAAAAAAA\nAAECCCCGGGD","output":"A8\nA2E1C4G3D1"},{"id":1693475137915,"input":"1\nA","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0354-Ma_hoa.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: CPP0111-So_lien_ke","url":"d:\\PTIT_C++\\CPP0111-So_lien_ke.cpp","tests":[{"id":1693277730168,"input":"3\n123212\n5654345676\n10233211123","output":"YES\nYES\nNO"},{"id":1693277749309,"input":"2\n12\n24","output":"YES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0111-So_lien_ke.cpp","group":"local","local":true}

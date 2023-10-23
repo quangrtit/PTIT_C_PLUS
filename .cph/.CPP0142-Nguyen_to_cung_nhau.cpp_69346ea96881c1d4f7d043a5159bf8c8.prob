@@ -1,0 +1,1 @@
+{"name":"Local: CPP0142-Nguyen_to_cung_nhau","url":"d:\\PTIT_C++\\CPP0142-Nguyen_to_cung_nhau.cpp","tests":[{"id":1693577084163,"input":"2\n2\n3","output":"0\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0142-Nguyen_to_cung_nhau.cpp","group":"local","local":true}

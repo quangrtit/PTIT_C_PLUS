@@ -1,0 +1,1 @@
+{"name":"Local: CPP0143-So_fibonacy_thu_n","url":"d:\\PTIT_C++\\CPP0143-So_fibonacy_thu_n.cpp","tests":[{"id":1693291026734,"input":"3\n2\n5\n20","output":"1\n5\n6765"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0143-So_fibonacy_thu_n.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: CPP0308-Ki_tu_khong_lap","url":"d:\\PTIT_C++\\CPP0308-Ki_tu_khong_lap.cpp","tests":[{"id":1693414136170,"input":"2\nABCDEAABC\nABC","output":"DE\nABC"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0308-Ki_tu_khong_lap.cpp","group":"local","local":true}

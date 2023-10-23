@@ -1,0 +1,1 @@
+{"name":"Local: FIX","url":"d:\\PTIT_C++\\FIX.cpp","tests":[{"id":1695223900327,"input":"2\ntimetopractice\ntoc\nzoomlazapzo\noza","output":"toprac\napzo"},{"id":1695224232457,"input":"1\ntimetopractice\ntoc","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\FIX.cpp","group":"local","local":true}

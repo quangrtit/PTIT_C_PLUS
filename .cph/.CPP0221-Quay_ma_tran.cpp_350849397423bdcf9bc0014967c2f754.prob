@@ -1,0 +1,1 @@
+{"name":"Local: CPP0221-Quay_ma_tran","url":"d:\\PTIT_C++\\CPP0221-Quay_ma_tran.cpp","tests":[{"id":1693647763643,"input":"2\n2 2\n1 2 5 6\n3 3\n1 2 3 4 5 6 7 8 9","output":"5 1 6 2\n4 1 2 7 5 3 8 9 6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C++\\CPP0221-Quay_ma_tran.cpp","group":"local","local":true}
