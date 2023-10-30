@@ -1,0 +1,1 @@
+{"name":"Local: CPP0225-Bien_doi_ma_tran","url":"d:\\PTIT_C_PLUS\\CPP0225-Bien_doi_ma_tran.cpp","tests":[{"id":1698677899229,"input":"2\n2\n1 2 3 4\n3\n1 2 3 4 2 3 3 2 1","output":"4\n6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C_PLUS\\CPP0225-Bien_doi_ma_tran.cpp","group":"local","local":true}
