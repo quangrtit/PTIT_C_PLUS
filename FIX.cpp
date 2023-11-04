@@ -49,8 +49,7 @@ int Find(int u, vector<int> &parent)
     }
     return parent[u] = Find(parent[u], parent);
 }
-class vcl {
-public: 
+struct vcl { 
     double x;
     char ktu;
     bool check;
@@ -93,8 +92,14 @@ double solve(vector<vcl> a)
     }
     adress.push_back({-1, -1});
     res.push_back(-1);
-    reverse(adress.begin(), adress.end());
-    reverse(res.begin(), res.end());
+    vector<pair<int, int>> demo1;
+    vector<double> demo2;
+    for(int i = adress.size() - 1; i >= 0; i--) demo1.push_back(adress[i]);
+    for(int i = 0; i < demo1.size(); i++) adress[i] = demo1[i];
+    for(int i = res.size() - 1; i >= 0; i--) demo2.push_back(res[i]);
+    for(int i = 0; i < demo2.size(); i++) res[i] = demo2[i];
+    // reverse(adress.begin(), adress.end());
+    // reverse(res.begin(), res.end());
     double kq = 0;
     int k = 0;
     while(k < a.size())
@@ -141,6 +146,164 @@ double solve(vector<vcl> a)
     }
     return kq; 
 }
+void compact(vector<char> &a1, vector<vcl> &a)
+{
+    int ii = 0;
+    while(ii < a1.size())
+    {
+        if(isdigit(a1[ii]))
+        {
+            int jj = ii;
+            double tmp = 0;
+            if(jj < a1.size())
+            {
+                while(isdigit(a1[jj]) && jj < a1.size())
+                {
+                    tmp = tmp * 10 + a1[jj] - '0';
+                    jj++; if(jj >= a1.size()) break;
+                }
+            }
+            if(jj < a1.size())
+            {
+                if(a1[jj] == '.')
+                {
+                    jj++; int cnt = -1;
+                    if(jj < a1.size())
+                    {
+                        while(isdigit(a1[jj]) && jj < a1.size())
+                        {
+                            tmp = tmp + (a1[jj] - '0') * (double)pow(10, cnt);
+                            cnt--;
+                            jj++; if(jj >= a1.size()) break;
+                        }
+                    }
+                }
+            }
+            if(ii == 0)
+            {
+                a.push_back(vcl(tmp, '+', true));// neu check = true tuc la 1 so 
+            }
+            else 
+            {
+                a.push_back(vcl(tmp, '+', true));
+            }
+            ii = jj;
+        }
+        else if(a1[ii] == '-')
+        {
+            int jj = ii;
+            int tru = 0;// dem so luong dau tru
+            if(jj < a1.size())
+            {
+                while(a1[jj] == '-' && jj < a1.size())
+                {
+                    tru++; jj++; if(jj >= a1.size()) break;
+                }
+            }
+            if(jj < a1.size())
+            {
+                while(a1[jj] == '+' && jj < a1.size())
+                {
+                    jj++; if(jj >= a1.size()) break;
+                }
+            }
+            int ee = jj;
+            double tmp = 0;
+            if(ee < a1.size())
+            {
+                while(isdigit(a1[ee]) && ee < a1.size())
+                {
+                    tmp = tmp * 10 + a1[ee] - '0';
+                    ee++; if(ee >= a1.size()) break;
+                }
+            }
+            if(ee < a1.size())
+            {
+                if(a1[ee] == '.')
+                {
+                    ee++; int cnt = -1;
+                    if(ee < a1.size())
+                    {
+                        while(isdigit(a1[ee]) && ee < a1.size())
+                        {
+                            tmp = tmp + (a1[ee] - '0') * (double)pow(10, cnt);
+                            cnt--;
+                            ee++; if(ee >= a1.size()) break;
+                        }
+                    }
+                }
+            }
+            if(ii - 1 >= 0)
+            {
+                if(!(a1[ii - 1] == ':' || a1[ii - 1] == '*')) a.push_back(vcl(0, '+', false));
+            }
+            a.push_back(vcl(tmp * pow(-1.0, tru % 2), '+', true)); 
+            ii = ee;
+        }
+        else if(a1[ii] == '+')
+        {
+            int jj = ii;
+            int tru = 0;// dem so luong dau tru
+            if(jj < a1.size())
+            {
+                while(a1[jj] == '+' && jj < a1.size())
+                {
+                    jj++; if(jj >= a1.size()) break;
+                }
+            }
+            if(jj < a1.size())
+            {
+                while(a1[jj] == '-' && jj < a1.size())
+                {
+                    tru++;
+                    jj++; if(jj >= a1.size()) break;
+                }
+            }
+            int ee = jj;
+            double tmp = 0;
+            if(ee < a1.size())
+            {
+                while(isdigit(a1[ee]) && ee < a1.size())
+                {
+                    tmp = tmp * 10 + a1[ee] - '0';
+                    ee++; if(ee >= a1.size()) break;
+                }
+            }
+            if(ee < a1.size())
+            {
+                if(a1[ee] == '.')
+                {
+                    ee++; int cnt = -1;
+                    if(ee < a1.size())
+                    {
+                        while(isdigit(a1[ee]) && ee < a1.size())
+                        {
+                            tmp = tmp + (a1[ee] - '0') * (double)pow(10, cnt);
+                            cnt--;
+                            ee++; if(ee >= a1.size()) break;
+                        }
+                    }
+                }
+            }
+            if(ii - 1 >= 0)
+            {
+                if(!(a1[ii - 1] == ':' || a1[ii - 1] == '*')) a.push_back(vcl(0, '+', false));
+            }
+            a.push_back(vcl(tmp * pow(-1.0, tru % 2), '+', true)); 
+            ii = ee;
+        }
+        else if(a1[ii] == '*')
+        {
+            a.push_back(vcl(0, '*', false));
+            ii++;
+        }
+        else if(a1[ii] == ':')
+        {
+            a.push_back(vcl(0, ':', false));
+            ii++;
+        }
+    }
+}
 void task2()
 {
     char x;
@@ -153,130 +316,135 @@ void task2()
         a1.push_back(x);
     }
     // chuan hoa a1
-    int ii = 0;
-    vector<char> a2;
-    vector<double> hi;
-    vector<vcl> res;
-    while(ii < a1.size())
+    vector<vcl> a;
+    compact(a1, a);
+    // chuan hoa a gom cac class vcl
+    cout << solve(a) << endl;
+}
+bool check(string s, int l, int r)
+{
+    for(int i = l; i <= r; i++)
     {
-        if(isdigit(a1[ii]))
+        if(s[i] == ')' || s[i] == '(') return false;
+    }
+    return true;
+}
+int finx(int i, string s)
+{
+    for(int j = i; j < s.size(); j++)
+    {
+        if(s[j] == ')')
         {
-            int jj = ii;
-            double tmp = 0;
-            while(isdigit(a1[jj]) && jj < a1.size())
+            return j;
+        }
+    }
+    return 0;
+}
+void task3()
+{
+    char x; 
+    vector<char> a;
+    vector<vcl> res;
+    int close = 0, open = 0;
+    while(1)
+    {
+        cin >> x;
+        if(x == '=') break;
+        a.push_back(x);
+        if(x == '(') open++;
+        else if(x == ')') close++;
+    }
+    vector<pair<char, int>> info;
+    for(int i = 0; i < a.size(); i++)
+    {
+        if(a[i] == '(')
+        {
+            info.push_back({'(', i});
+        }
+        else if(a[i] == ')')
+        {
+            info.push_back({')', i});
+        }
+    }
+    if(info.empty())
+    {
+        cout << "chuyen qua phuong an 1: \n";
+        return;
+    }
+    stack<pair<int, int>> st;
+    map<int, int> vtri;// luu vi tri cua cac cap ngoac
+    for(int i = 0; i < info.size(); i++)
+    {   
+        if(st.empty())
+        {
+            st.push({info[i].first, info[i].second});
+        }
+        else 
+        {
+            if(st.top().first == '(' && info[i].first == ')')
             {
-                tmp = tmp * 10 + a1[jj] - '0';
-                jj++;
-            }
-            if(a1[jj] == '.')
-            {
-                jj++; int cnt = -1;
-                while(isdigit(a1[jj]) && jj < a1.size())
-                {
-                    tmp = tmp + (a1[jj] - '0') * (double)pow(10, cnt);
-                    cnt--;
-                    jj++;
-                }
-            }
-            if(ii == 0)
-            {
-                res.push_back(vcl(tmp, '+', true));// neu check = true tuc la 1 so 
+                vtri[st.top().second] = info[i].second;
+                st.pop();
             }
             else 
             {
-                res.push_back(vcl(tmp, '+', true));
+                st.push({info[i].first, info[i].second});
             }
-            ii = jj;
-        }
-        else if(a1[ii] == '-')
-        {
-            int jj = ii;
-            int tru = 0;// dem so luong dau tru
-            while(a1[jj] == '-' && jj < a1.size())
-            {
-                tru++; jj++;
-            }
-            while(a1[jj] == '+' && jj < a1.size())
-            {
-                jj++;
-            }
-            int ee = jj;
-            double tmp = 0;
-            while(isdigit(a1[ee]) && ee < a1.size())
-            {
-                tmp = tmp * 10 + a1[ee] - '0';
-                ee++;
-            }
-            if(a1[ee] == '.')
-            {
-                ee++; int cnt = -1;
-                while(isdigit(a1[ee]) && ee < a1.size())
-                {
-                    tmp = tmp + (a1[ee] - '0') * (double)pow(10, cnt);
-                    cnt--;
-                    ee++;
-                }
-            }
-            if(ii - 1 >= 0)
-            {
-                if(!(a1[ii - 1] == ':' || a1[ii - 1] == '*')) res.push_back(vcl(0, '+', false));
-            }
-            res.push_back(vcl(tmp * pow(-1.0, tru % 2), '+', true)); 
-            ii = ee;
-        }
-        else if(a1[ii] == '+')
-        {
-            int jj = ii;
-            int tru = 0;// dem so luong dau tru
-            while(a1[jj] == '+' && jj < a1.size())
-            {
-                jj++;
-            }
-            while(a1[jj] == '-' && jj < a1.size())
-            {
-                tru++;
-                jj++;
-            }
-            int ee = jj;
-            double tmp = 0;
-            while(isdigit(a1[ee]) && ee < a1.size())
-            {
-                tmp = tmp * 10 + a1[ee] - '0';
-                ee++;
-            }
-            if(a1[ee] == '.')
-            {
-                ee++; int cnt = -1;
-                while(isdigit(a1[ee]) && ee < a1.size())
-                {
-                    tmp = tmp + (a1[ee] - '0') * (double)pow(10, cnt);
-                    cnt--;
-                    ee++;
-                }
-            }
-            if(ii - 1 >= 0)
-            {
-                if(!(a1[ii - 1] == ':' || a1[ii - 1] == '*')) res.push_back(vcl(0, '+', false));
-            }
-            res.push_back(vcl(tmp * pow(-1.0, tru % 2), '+', true)); 
-            ii = ee;
-        }
-        else if(a1[ii] == '*')
-        {
-            res.push_back(vcl(0, '*', false));
-            ii++;
-        }
-        else if(a1[ii] == ':')
-        {
-            res.push_back(vcl(0, ':', false));
-            ii++;
         }
     }
-    // chuan hoa res gom cac class vcl
-    cout << solve(res) << endl;
+    vector<char> b;
+    string s = ""; 
+    for(int i = 0; i < a.size(); i++)
+    {
+        s += a[i];
+    }
+
+    while(!check(s, 0, (int)s.size() - 1))
+    {
+        int i = 0;
+        for(int i = 0; i < s.size() - 1; i++)
+        {
+            if(finx(i, s) != 0)
+            {
+                if(check(s, i + 1, finx(i, s) - 1))// kiem tra trong cap ngoac do co ton tai cap ngoac nao khac khong
+                {
+                    //cout << "1000000" << endl; return;
+                    vector<char> att; 
+                    vector<vcl> btt;
+                    for(int j = i + 1; j <= finx(i, s) - 1; j++) att.push_back(s[j]);
+                    compact(att, btt);
+                    double c1 = solve(btt);
+                    string ye = to_string(c1);// ket qua cua gia tri trong dau ngoac
+                    string tmp1 = "";
+                    int jj = 0; 
+                    while(jj < s.size())
+                    {
+                        if(jj < i) {tmp1 += s[jj]; jj++;}
+                        else if(jj >= i && jj <= finx(i, s)) 
+                        {
+                            for(int e = 0; e < ye.size(); e++) tmp1 += ye[e];
+                            jj = finx(i, s) + 1;
+                        }
+                        else {tmp1 += s[jj]; jj++;}
+                    }
+                    s = tmp1;
+                    cout << s << endl;
+                    cout << "stt: "  << c1 << endl; 
+                    //cout << c1 << " " << i << " " << vtri[i] << endl; return;
+                    break;
+                }
+            }
+        }
+    }
+}
+void tn()
+{
+    double x = -4.514522;
+    string s = to_string(x);
+    for(auto x: s) cout << x << " ";
 }
 int main()
 {
     fast();
-    task2();
+    task3();
 }
