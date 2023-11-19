@@ -1,1 +1,1 @@
-{"name":"Local: FIX","url":"d:\\PTIT_C_PLUS\\FIX.cpp","tests":[{"id":1699373643643,"input":"2\n11\n1 3 5 8 9 2 6 7 6 8 9\n6\n1 4 3 2 6 7","output":"3\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C_PLUS\\FIX.cpp","group":"local","local":true}
+{"name":"Local: FIX","url":"d:\\PTIT_C_PLUS\\FIX.cpp","tests":[{"id":1700373651782,"input":"2\n888\n6564525600","output":"5\n15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT_C_PLUS\\FIX.cpp","group":"local","local":true}

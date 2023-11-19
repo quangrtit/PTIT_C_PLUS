@@ -1,231 +1,86 @@
-class vcl {
-public: 
-    double x;
-    char ktu;
-    bool check;
-    vcl(){}
-    vcl(double x, char ktu, bool check){this->x = x; this->ktu = ktu; this->check = check;}
-};
+#include<iostream>
+#include<unistd.h>
+#include<math.h>
+#include<string.h>
+#include<cctype>
+#include<algorithm>
+#include<fstream>
+using namespace std;
 
-double solve(vector<vcl> a)
+typedef class person {
+public:
+    int hs, lcb, pc;
+    string id, name; 
+    int money = 0;
+public: 
+    person(){}
+    friend istream& operator >> (istream& in, person &other)
+    {
+        getline(in, other.id);
+        getline(in, other.name);
+        in >> other.hs >> other.lcb >> other.pc;
+        return in;
+    }
+    friend ostream& operator << (ostream& out, person &other)
+    {
+        out << other.id << " " << other.name << " " << other.money << endl;
+        return out;
+    }
+    void in();
+    void solve();
+    void out();
+    ~person(){}
+} cl;
+void person::solve()
 {
-    int ii = 0;
-    vector<pair<int, int>> adress;
-    vector<double> res; // luu ket qua cua cac bo so nhan hoac chia 
-    while(ii < a.size())
-    {
-        if(a[ii].ktu == '*' || a[ii].ktu == ':')
-        {
-            double what = a[ii - 1].x;
-            int jj = ii;
-            while((a[jj].ktu == '*' || a[jj].ktu == ':') && jj < (int)a.size())
-            {
-                if(a[jj].ktu == '*')
-                {
-                    what *= a[jj + 1].x;
-                }
-                else if(a[jj].ktu == ':')
-                {
-                    what /= a[jj + 1].x;
-                }
-                jj += 2;
-                if(jj >= a.size()) break;// lát quay lại kiểm tra 
-            }
-            adress.push_back({ii - 1, jj - 1});
-            res.push_back(what);
-            ii = jj;
-        }
-        else 
-        {
-            ii ++;
-        }
-    }
-    adress.push_back({-1, -1});
-    res.push_back(-1);
-    reverse(adress.begin(), adress.end());
-    reverse(res.begin(), res.end());
-    double kq = 0;
-    int k = 0;
-    while(k < a.size())
-    {
-        if(k == 0)
-        {
-            if(k != adress.back().first) 
-            {
-                kq += a[k].x;
-                k += 2; 
-            }
-            else 
-            {
-                kq += res.back(); res.pop_back();
-                k = adress.back().second + 2; adress.pop_back();
-            }
-            continue;
-        }
-        if(k != adress.back().first)
-        {
-            if(a[k - 1].ktu == '+')
-            {
-                kq += a[k].x;
-            }
-            else if(a[k - 1].ktu == '-')
-            {
-                kq += 0 - a[k].x;
-            }
-            k += 2;
-        }
-        else 
-        {
-            if(a[k - 1].ktu == '+')
-            {
-                kq += res.back(); res.pop_back();
-                k = adress.back().second + 2;
-            }
-            else if(a[k - 1].ktu == '-') 
-            {
-                kq += 0 - res.back(); res.pop_back();
-                k = adress.back().second + 2; adress.pop_back();
-            }
-        }
-    }
-    return kq; 
+    this->money = this->lcb * this->hs + this->pc;
 }
-void task2()
+void task1()
 {
-    char x;
-    // vector<info> a;
-    vector<char> a1;
-    while(1)
+    fstream file_in; file_in.open("NhanVien.txt");
+    int n; cin >> n;
+    vector<person> in(n);
+    for(int i = 0; i < n; i++)
     {
-        cin >> x;
-        if(x == '=') break;
-        a1.push_back(x);
+        cin.ignore();
+        cin >> in[i];
+        in[i].solve();
     }
-    // chuan hoa a1
-    int ii = 0;
-    vector<char> a2;
-    vector<double> hi;
-    vector<vcl> res;
-    while(ii < a1.size())
+    sort(in.begin(), in.end(), [](person x, person y)
     {
-        if(isdigit(a1[ii]))
+        if(x.money != y.money)
         {
-            int jj = ii;
-            double tmp = 0;
-            while(isdigit(a1[jj]) && jj < a1.size())
-            {
-                tmp = tmp * 10 + a1[jj] - '0';
-                jj++;
-            }
-            if(a1[jj] == '.')
-            {
-                jj++; int cnt = -1;
-                while(isdigit(a1[jj]) && jj < a1.size())
-                {
-                    tmp = tmp + (a1[jj] - '0') * (double)pow(10, cnt);
-                    cnt--;
-                    jj++;
-                }
-            }
-            if(ii == 0)
-            {
-                res.push_back(vcl(tmp, '+', true));// neu check = true tuc la 1 so 
-            }
-            else 
-            {
-                res.push_back(vcl(tmp, '+', true));
-            }
-            ii = jj;
+            return x.money < y.money;
         }
-        else if(a1[ii] == '-')
+        else 
         {
-            int jj = ii;
-            int tru = 0;// dem so luong dau tru
-            while(a1[jj] == '-' && jj < a1.size())
-            {
-                tru++; jj++;
-            }
-            while(a1[jj] == '+' && jj < a1.size())
-            {
-                jj++;
-            }
-            int ee = jj;
-            double tmp = 0;
-            while(isdigit(a1[ee]) && ee < a1.size())
-            {
-                tmp = tmp * 10 + a1[ee] - '0';
-                ee++;
-            }
-            if(a1[ee] == '.')
-            {
-                ee++; int cnt = -1;
-                while(isdigit(a1[ee]) && ee < a1.size())
-                {
-                    tmp = tmp + (a1[ee] - '0') * (double)pow(10, cnt);
-                    cnt--;
-                    ee++;
-                }
-            }
-            if(ii - 1 >= 0)
-            {
-                if(!(a1[ii - 1] == ':' || a1[ii - 1] == '*')) res.push_back(vcl(0, '+', false));
-            }
-            res.push_back(vcl(tmp * pow(-1.0, tru % 2), '+', true)); 
-            ii = ee;
+            return x.id < y.id;
         }
-        else if(a1[ii] == '+')
+    });
+    for(int i = 0; i < n; i++)
+    {
+        file_in << in[i].id << "\n";
+        file_in << in[i].name << "\n";
+        file_in << in[i].hs << "\n";
+        file_in << in[i].lcb << "\n";
+        file_in << in[i].pc << "\n";
+        in[i].solve();
+        file_in << in[i].money;
+    }
+    string s;
+    while(getline(file_in, s))
+    {
+        if(s == in[in.size() - 1].id)
         {
-            int jj = ii;
-            int tru = 0;// dem so luong dau tru
-            while(a1[jj] == '+' && jj < a1.size())
-            {
-                jj++;
-            }
-            while(a1[jj] == '-' && jj < a1.size())
-            {
-                tru++;
-                jj++;
-            }
-            int ee = jj;
-            double tmp = 0;
-            while(isdigit(a1[ee]) && ee < a1.size())
-            {
-                tmp = tmp * 10 + a1[ee] - '0';
-                ee++;
-            }
-            if(a1[ee] == '.')
-            {
-                ee++; int cnt = -1;
-                while(isdigit(a1[ee]) && ee < a1.size())
-                {
-                    tmp = tmp + (a1[ee] - '0') * (double)pow(10, cnt);
-                    cnt--;
-                    ee++;
-                }
-            }
-            if(ii - 1 >= 0)
-            {
-                if(!(a1[ii - 1] == ':' || a1[ii - 1] == '*')) res.push_back(vcl(0, '+', false));
-            }
-            res.push_back(vcl(tmp * pow(-1.0, tru % 2), '+', true)); 
-            ii = ee;
+            cout << in[in.size() - 1];
         }
-        else if(a1[ii] == '*')
+        if(s == in[0].id)
         {
-            res.push_back(vcl(0, '*', false));
-            ii++;
-        }
-        else if(a1[ii] == ':')
-        {
-            res.push_back(vcl(0, ':', false));
-            ii++;
+            cout << in[0];
         }
     }
-    // chuan hoa res gom cac class vcl
-    cout << solve(res) << endl;
 }
 int main()
 {
-    fast();
-    task2();
+    task1();
 }

@@ -1,0 +1,76 @@
+#include<iostream>
+#include<unistd.h>
+#include<math.h>
+#include<string.h>
+#include<cctype>
+#include<algorithm>
+#include<fstream>
+using namespace std;
+
+typedef class person {
+public:
+    int hs, lcb, pc;
+    string id, name; 
+    int money = 0;
+public: 
+    person(){}
+    friend istream& operator >> (istream& in, person &other)
+    {
+        getline(in, other.id);
+        getline(in, other.name);
+        in >> other.hs >> other.lcb >> other.pc;
+        return in;
+    }
+    friend ostream& operator << (ostream& out, person &other)
+    {
+        out << other.id << " " << other.name << " " << other.money << endl;
+        return out;
+    }
+    void in();
+    void solve();
+    void out();
+    ~person(){}
+} cl;
+void person::solve()
+{
+    this->money = this->lcb * this->hs + this->pc;
+}
+void task1()
+{
+    fstream file_in; file_in.open("NhanVien.txt");
+    int n; cin >> n;
+    vector<person> in(n);
+    for(int i = 0; i < n; i++)
+    {
+        cin.ignore();
+        cin >> in[i];
+        in[i].solve();
+    }
+    sort(in.begin(), in.end(), [](person x, person y)
+    {
+        if(x.money != y.money)
+        {
+            return x.money < y.money;
+        }
+        else 
+        {
+            return x.id < y.id;
+        }
+    });
+    for(int i = 0; i < n; i++)
+    {
+        file_in << in[i].id << "\n";
+        file_in << in[i].name << "\n";
+        file_in << in[i].hs << "\n";
+        file_in << in[i].lcb << "\n";
+        file_in << in[i].pc;
+        in[i].solve();
+        file_in << in[i].money;
+    }
+    cout << in[in.size() - 1];
+    cout << in[0];
+}
+int main()
+{
+    task1();
+}
